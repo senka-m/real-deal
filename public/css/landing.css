@@ -1,0 +1,181 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/avara.woff);
+}
+
+.landing-video-container {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#landing-intro_vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  height: 100%;
+  width: 177.77777vh;
+  min-width: 100%;
+  min-height: 56.25vw;
+}
+
+img {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+/* Add some content at the bottom of the video/page */
+.landing-content {
+  position: absolute;
+  font-family: myFirstFont;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  padding-right: 20vw;
+}
+
+div {
+  font-family: myFirstFont;
+}
+
+h1 { 
+  width: 20vw;
+  font-style: italic;
+  font-size: 4.875rem;
+}
+
+p {
+  width: 40vw;
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+.landing-button-list {
+  display: flex;
+  flex: row nowrap;
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  padding: 0 0.5vw;
+}
+
+button {
+  border: none;
+  color: black;
+  font-family: myFirstFont;
+  text-decoration: none;
+  /*  display: inline-block;*/
+  font-size: 2.25rem;
+  margin: 1.2rem 0.2rem ;
+  padding-top: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  border-radius: 50px; 
+  transition-duration: 0.4s;
+  border: 0.2rem solid #f1f1f1;
+}
+
+button:hover {
+  background-color: transparent;
+  color: blue;
+  border: 0.2rem solid blue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  #landing-intro_vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  h1 {
+    width: 80vw;
+    font-style: italic;
+    font-size: 3.5rem;
+  }
+
+  p {
+    width: 80vw;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    position: absolute;
+  }
+
+  .landing-button-list {
+    display: flex;
+    flex: row nowrap;
+    position: fixed;
+    bottom: 0;
+    left: 0vw;
+    padding: 0 0.5vw;
+  }
+
+  button {
+    border: none;
+    color: black;
+    font-family: myFirstFont;
+    text-decoration: none;
+    /*  display: inline-block;*/
+    font-size: 2.25rem;
+    margin: 1.2rem 0.2rem ;
+    padding-top: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    border-radius: 50px; 
+    transition-duration: 0.4s;
+    border: 0.2rem solid #f1f1f1;
+  }
+}
+
+@media (pointer: coarse) {
+  button:hover {
+    color: black;
+    background-color: white;
+  }
+
+  a:hover {
+    color: inherit;
+  }
+}

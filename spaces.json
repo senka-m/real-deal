@@ -1,0 +1,44 @@
+[
+  {
+    "id": "maja",
+    "title": "Maja",
+    "intro": "## Maja\n\nAge during the event: _34_\n\nDuring the event Maja was located in _Rakovica_, the county that was most heavily bombed in Belgrade. A few weeks before it started she became _(my) mother_.",
+    "backgroundStyle": "linear-gradient(180deg, rgb(4, 0, 255), rgb(137, 104, 255))",
+    "model": "maja.glb",
+    "audio": "maja.mp3",
+    "video": "fleeing.mp4",
+    "objects": {
+      "hover": [
+        {
+          "name": "Plane001",
+          "text": "I never wore my pajama during this time. I thought, if a bomb hits our house, I wouldn’t want to be found dead in pajamas."
+        },
+        {
+          "name": "Plane017",
+          "text": "I didn’t understand what happened at first. You were young. I left the room, I’ve just changed your clothes, and then at 8 was the first time it exploded. I forgot the exact date. Subconsciously but also consciously to a degree. That evening it exploded in our area, for the first time in Straževica. Straževica is that hill 500 kilometers (air path?) away from our apartment."
+        },
+        {
+            "name": "Plane",
+            "text": "Another plane."
+        }
+      ],
+      "exit": [
+        {
+          "name": "nav-Cylinder",
+          "text": "Enter Irena's room",
+          "linkId": "irena"
+        },
+        {
+          "name": "nav-Cylinder.001",
+          "text": "Enter Tanja's room",
+          "linkId": "tanja"
+        }
+      ],
+      "movie": [
+        "Plane001",
+        "Plane017",
+        "Plane"
+      ]
+    }
+  }
+]
