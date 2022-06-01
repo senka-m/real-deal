@@ -6,38 +6,284 @@
     "backgroundStyle": "linear-gradient(180deg, rgb(4, 0, 255), rgb(137, 104, 255))",
     "model": "maja.glb",
     "audio": "maja.mp3",
+    "texture":"rock.jpg",
     "video": "fleeing.mp4",
     "objects": {
       "hover": [
         {
-          "name": "Plane001",
-          "text": "I never wore my pajama during this time. I thought, if a bomb hits our house, I wouldn’t want to be found dead in pajamas."
+          "name": "footage",
+          "text": "I never wore my pyjamas during this time. I thought, if a stray-away bomb hits our house, I wouldn't want to be found dead in pyjamas."
         },
         {
-          "name": "Plane017",
-          "text": "I didn’t understand what happened at first. You were young. I left the room, I’ve just changed your clothes, and then at 8 was the first time it exploded. I forgot the exact date. Subconsciously but also consciously to a degree. That evening it exploded in our area, for the first time in Straževica. Straževica is that hill 500 kilometers (air path?) away from our apartment."
+          "name": "footage002",
+          "text": "I didn't understand what happened at first. _You_ were young. I left the room, I've just changed your clothes, and then at 8 was the first time it exploded. I forgot the exact date. Subconsciously but also consciously to a degree."
         },
         {
-            "name": "Plane",
-            "text": "Another plane."
+          "name": "doily003",
+          "text": "That evening it exploded in our area, for the first time in Straževica, 500 meters in aerial distance from our apartment."
+        },
+        {
+          "name": "falling_cloth001",
+          "text": "We speak about the west as if it's the pinnacle of democracy, which is debatable. In the same way that it's debatable that everything here is bad."
+        },
+        {
+          "name": "falling_cloth002",
+          "text": "Innocent people exist in every country, in Iraq, in Iran, in Syria, everywhere. Big forces rule the world. Those that are more powerful always act under the veil of democracy."
+        },
+        {
+          "name": "pacifier",
+          "text": "I made up a song with which I tried to get you to fall asleep and calm both you and myself. So I would rock you in my arms and sing 'NATO can't do anything to us, to us'"
+        },
+        {
+          "name": "doily001",
+          "text": "I don't like that I sang it as if it's a partisan song. I am a part of a generation which didn't have a lot of options when we were young. We were nursed with the lectures of the National Liberation fight, the fight against fascism, which I respect a lot."
+        },
+        {
+          "name": "crib",
+          "text": "_You_ don't know what people gave me, what kind of solidarity there was back then. I received so much from Saška, towls, sheets, baby onesies."
+        },
+        {
+          "name": "cloth004",
+          "text": "Everyone who found baby milk formula would come to us and bring it. Because I couldn't produce much milk. After two months, it was just sour."
         }
+        
+      ],
+      "screen": [
+        { "name": "footage" },
+        { "name": "footage001" },
+        { "name": "footage002" }
       ],
       "exit": [
         {
-          "name": "nav-Cylinder",
-          "text": "Enter Irena's room",
+          "name": "bottle",
+          "text": "_Enter Irena's room_",
           "linkId": "irena"
         },
         {
-          "name": "nav-Cylinder.001",
+          "name": "bottle001",
+          "text": "_Enter Tanja's room_",
+          "linkId": "tanja"
+        }
+      ],
+      "movie": [
+        "footage001",
+        "footage002",
+        "footage"
+      ]
+    }
+  },
+  {
+    "lmao": "roflmao"
+  },
+  {
+    "id": "irena",
+    "title": "Irena",
+    "intro": "## Irena\n\nAge during the event: _24_\n\nDuring the event Irena was located in _Rakovica_, but moved to the center of Belgrade because of the intensity of the bombing. She is _my friend_.",
+    "backgroundStyle": "linear-gradient(180deg, rgb(137, 104, 255), rgb(86, 64, 105))",
+    "model": "irena.glb",
+    "audio": "irena.mp3",
+    "texture":"rock.jpg",
+    "video": "ruins.mp4",
+    "objects": {
+      "hover": [
+        {
+          "name": "footage001",
+          "text": "I was consumed by panic during this period, so I told Seba that we have to get married now, since the apocalypse has started."
+        },
+        {
+          "name": "cloud",
+          "text": "I never mentioned it out load but I did think that if we have to marry now or we never will. And in a matter of a week we prepared for the next weekened and got married."
+        },
+        {
+          "name": "aircraft003",
+          "text": "Because I was expecting for them to continue bombing the same place, so I thought we had to leave instantly."
+        },
+        {
+          "name": "cloud004",
+          "text": "In that same moment, the bomb on Straževica fell and I just saw a cloud in the shape of a mushroom. I lost it."
+        },
+        {
+          "name": "cloud005",
+          "text": "Seba, (my husband) went to get things and i got seized by a wave of panic. I ran out on the balcony, he was by the container, and I shouted 'A bomb will fan on your head, get back inside.'"
+        },
+        {
+          "name": "aircraft",
+          "text": "Somehow, when you find yourself with others in this situation, you become more connected to this person in that period. You become closer."
+        },
+        {
+          "name": "aircraft002",
+          "text": "Like once there was this one girl there and we were listening to the air hazard siren and tears just started running down her face. She probably had a very different experience of the bombing."
+        },
+        {
+          "name": "window1001",
+          "text": "I wanted to mention what came after because of polluted uranium. They sowed disease, which is rough. Back then those were just bombs, which ended quicklym but this lasts. NATO injects itself into every country's business. As if they're a peace unit, but people know what it really is."
+        }
+        
+      ],
+      "screen": [
+        { "name": "footage" },
+        { "name": "footage001" },
+        { "name": "cloud001" }
+      ],
+      "exit": [
+        {
+          "name": "window1",
+          "text": "Enter Uros's room",
+          "linkId": "uros"
+        },
+        {
+          "name": "window2001",
           "text": "Enter Tanja's room",
           "linkId": "tanja"
         }
       ],
       "movie": [
-        "Plane001",
-        "Plane017",
-        "Plane"
+        "footage001",
+        "cloud001",
+        "footage"
+      ]
+    } 
+  },
+  {
+    "id": "tanja",
+    "title": "Tanja",
+    "intro": "## Tanja\n\nAge during the event: _33_\n\nDuring the event Irena was located in _Rakovica_, but moved to the center of Belgrade because of the intensity of the bombing. She is _my friend_.",
+    "backgroundStyle": "linear-gradient(180deg, rgb(220, 168, 255), rgb(4, 0, 255))",
+    "model": "tanja.glb",
+    "audio": "tanja.mp3",
+    "texture":"rock.jpg",
+    "video": "partisan.mp4",
+    "objects": {
+      "hover": [
+        {
+          "name": "pillow",
+          "text": "From the detonation, the glass of the windows broke. I went to check it out and the window above my father's bed broke. It was covered in glass."
+        },
+        {
+          "name": "blanket",
+          "text": "When the bomb dropped on Straževica, I can't remember how much it weighed but that was a sunken sound. The initial sound was not as important as the shock that followed. It was as if the whole ground was moving."
+        },
+        {
+          "name": "footage",
+          "text": "It was funny, when the shit would start, the TVs would play the news and all of a sudden, no program. And immediatelly after they'd play partisan films. You'd think to yourself, are they really dumb enough to think partisan films are gonna make me stronger when NATO is shooting at us."
+        },
+        {
+          "name": "tiles",
+          "text": "I have the same question of whether they should have struck us or not. I think they shouldn't have because it is completely uncivilizational."
+        },
+        {
+          "name": "tiles002",
+          "text": "On the other hand, there is the question of: In what way did we, and here I use we in quotation marks as none of us had any say in that, treat Kosovo. You see, this is a constant question."
+        },
+        {
+          "name": "shards001",
+          "text": "I was at your place a lot, you were a baby then. Someone was holding you in their arms and something got hit. You turned towards me and wanted me to hold you."
+        },
+        {
+          "name": "shards002",
+          "text": "It seemed to me as if in that moment you felt tranquility from my side which you needed. Which is why you extended your arms towards me even tho someone was already holding you."
+        }
+        
+      ],
+      "screen": [
+        { "name": "footage" },
+        { "name": "footage001" },
+        { "name": "footage002" }
+      ],
+      "exit": [
+        {
+          "name": "window",
+          "text": "Enter Uros's room",
+          "linkId": "uros"
+        },
+        {
+          "name": "tiles003",
+          "text": "Enter Maja's room",
+          "linkId": "maja"
+        }
+      ],
+      "movie": [
+        "footage001",
+        "footage002",
+        "footage"
+      ]
+    }
+  },
+  {
+    "id": "uros",
+    "title": "Uros",
+    "intro": "## Uros\n\nAge during the event: _24_\n\nDuring the event Irena was located in _Rakovica_, but moved to the center of Belgrade because of the intensity of the bombing. She is _my friend_.",
+    "backgroundStyle": "linear-gradient(180deg, rgb(34, 0, 57), rgb(153, 0, 255))",
+    "model": "uros.glb",
+    "audio": "uros.mp3",
+    "video": "cartoons.mp4",
+    "texture":"rock.jpg",
+    "objects": {
+      "hover": [
+        {
+          "name": "tv002",
+          "text": "I woudn't want to contribute to its significance, but going to the basement of my grandparents was one of the most important memories of the time. We were there every night. I have a recollection of darkness that turned into a fear of said darkness."
+        },
+        {
+          "name": "tv001",
+          "text": "Me, as well as my entire family, developed a need for collecting things. My inability to let trinkets go is directly linked to the abrupt departure of our home."
+        },
+        {
+          "name": "tv004",
+          "text": "My mother's voice and her talking was the most calming. I don't remember the exact words, but it was a very endearing and nurturing voice."
+        },
+        {
+          "name": "footage002",
+          "text": "Because my dad was watching CNN the night before, circumstantially, we found out that they were going to bomb Belgrade tomorrow."
+        },
+        {
+          "name": "aircraft",
+          "text": "I am a aircraft."
+        },
+        {
+          "name": "blanket",
+          "text": "We had a bunkbed and if we didn't leave that night, he probably wouldn't be alive right now."
+        },
+        {
+          "name": "rock",
+          "text": "Some part of the house just weren't there anymore."
+        },
+        {
+          "name": "bunkbed",
+          "text": "I have one image in my memory, of the huge concrete rock that fell on my borther's pillow."
+        },
+        {
+          "name": "car",
+          "text": "My dad knew what was located on Straževica, where we lived. That it was a military basis. We packed that night and went to my grandma's village."
+        }
+      ],
+      "screen": [
+        { "name": "footage" },
+        { "name": "footage001" },
+        { "name": "footage002" },
+        { "name": "footage003" }
+        
+      ],
+      "exit": [
+        {
+          "name": "tv",
+          "text": "Enter Irena's room",
+          "linkId": "irena"
+        },
+        {
+          "name": "Plane002",
+          "text": "Enter Tanja's room",
+          "linkId": "tanja"
+        }
+      ],
+      "movie": [
+        "footage001",
+        "footage002",
+        "footage003",
+        "footage"
+      ],
+      "textured":[
+        "rock"
       ]
     }
   }

@@ -3,13 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Memory reconstruction of..</title>
+    <link rel="stylesheet" type="text/css" href="css/space.css">
   </head>
   <body>
-    <div class="main-title">
-      <p class="hover-text"></p>
-     </div>
-    <script src="js/jsm/three.min.js"></script>
+    <a class="closure-button" href='?id=landing.html'><button>closure</button></a>
+    <div class="hover-text hide"></div>
+    <div class="exit-text hide"></div>
+    <div class="intro hide"></div>
+    <canvas class="space-canvas">
+    You don't have JavaScript enabled???? :c
+    </canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/js/jsm/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/jsm/markdown-it.min.js"></script>
     <script type="module" src="js/space.js"></script>
   </body>
 </html>
-""

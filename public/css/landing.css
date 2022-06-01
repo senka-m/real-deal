@@ -1,6 +1,10 @@
 @font-face {
-  font-family: myFirstFont;
+  font-family: Avara;
   src: url(../fonts/avara.woff);
+}
+@font-face {
+  font-family: AvaraBold;
+  src: url(../fonts/avara-bolditalic.woff);
 }
 
 .landing-video-container {
@@ -15,13 +19,17 @@
 
 #landing-intro_vid {
   position: absolute;
+  /* bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
   height: 100%;
   width: 177.77777vh;
-  min-width: 100%;
-  min-height: 56.25vw;
+  max-width: 100%;
+  max-height: 56.25vw;
 }
 
 img {
@@ -46,7 +54,7 @@ body {
 /* Add some content at the bottom of the video/page */
 .landing-content {
   position: absolute;
-  font-family: myFirstFont;
+  font-family: Avara;
   top: 0;
   color: #f1f1f1;
   width: 100%;
@@ -55,12 +63,12 @@ body {
 }
 
 div {
-  font-family: myFirstFont;
+  font-family: Avara;
 }
 
 h1 { 
-  width: 20vw;
-  font-style: italic;
+  width: 30vw;
+  font-family: AvaraBold;
   font-size: 4.875rem;
 }
 
@@ -82,7 +90,7 @@ p {
 button {
   border: none;
   color: black;
-  font-family: myFirstFont;
+  font-family: Avara;
   text-decoration: none;
   /*  display: inline-block;*/
   font-size: 2.25rem;

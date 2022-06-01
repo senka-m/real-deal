@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Avara;
+  src: url(../fonts/avara.woff);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.space-canvas {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  color: black;
+  font-family: Avara;
+  text-decoration: none;
+  font-size: 2.25rem;
+  margin: 1.2rem 0.2rem ;
+  padding-top: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  left: 85%;
+  top: 87%;
+  position: absolute;
+  border-radius: 50px; 
+  transition-duration: 0.4s;
+  border: 0.2rem solid #f1f1f1;
+  z-index: 25;
+}
+button:hover {
+  background-color: transparent;
+  color: blue;
+  border: 0.2rem solid blue;
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 10;
+  width: 35%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: #ffffff;
+  font-family: Avara;
+  border-radius: 25px;
+  box-shadow: 0px 20px 50px 15px black;
+  transition-duration: 0.4s;
+}
+
+.hover-text.hide {
+  display: none;
+}
+
+.exit-text {
+  position: absolute;
+  width: 10.5%;
+  z-index: 10;
+  transform-origin: top center;
+  padding-left: 10px;
+  font-family: Avara;
+  color: red;
+  background: white;
+  cursor: pointer;
+}
+
+.exit-text.hide {
+  display: none;
+}
+
+.intro{
+  /* visibility: hidden; */
+  top: 20vh;
+  left: 29vw;
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  overflow-y: scroll;
+  z-index: 10;
+  padding: 20px;
+  font-size: 30px;
+  font-family: Avara;
+  color: blue;
+  background: white;
+  font-style: serif;
+  text-align: left;
+}
+.intro.hide {
+  display: none;
+}
