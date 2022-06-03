@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    body{
+     background: black;
+     /* background: linear-gradient(180deg, black, #8968ff); */
+     margin: 0;
+     padding: 0;
+     width: 100vw;
+     height: 100vw;
+     overflow-y: scroll;
+     overflow-x: hidden;
+   }
+   img{
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -2;
+    }
+  .content {
+    position: absolute;
+    font-family: myFirstFont;
+    top: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px !important;
+    padding-right: 20vw !important;
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(avara.woff);
+  }
+
+  div {
+    font-family: myFirstFont;
+  }
+  h1{ width: 60vw;
+   font-style: italic;
+   font-size: 4.875rem;
+ }
+ p {width: 40vw;
+   font-size: 1.375rem;
+   line-height: 1.3;
+ }
+
+ .container{
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+}
+.buttonz{
+  display: flex;
+  flex: row nowrap;
+  padding: 0 0.5vw;
+}
+
+.container-scroll{
+  width: 100%;
+  overflow-x: scroll;
+}
+button {
+  border: none;
+  color: black;
+  font-family: myFirstFont;
+  text-decoration: none;
+  font-size: 2.25rem;
+  margin: 1.2rem 0.2rem ;
+  padding-top: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  border-radius: 50px; 
+  transition-duration: 0.4s;
+  border: 0.2rem solid #f1f1f1;
+}	
+button:hover {
+  background-color: transparent;
+  color: blue;
+  border: 0.2rem solid blue;
+}
+
+a { 
+  text-decoration: none;
+	color: black;
+}
+a:hover {
+  color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  h1{ 
+    width: 80vw;
+    font-style: italic;
+    font-size: 3.5rem;
+  }
+  p {
+    width: 80vw;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    position: absolute;
+  }
+  
+  .container{
+    position: fixed;
+    bottom: 0;
+    left: 0vw;
+  }
+  .buttonz{
+    display: flex;
+    flex: row nowrap;
+    padding: 0 0.5vw;
+  }
+
+  .container-scroll{
+    width: 100%;
+    overflow-x: scroll;
+  }
+  button {
+    border: none;
+    color: black;
+    font-family: myFirstFont;
+    text-decoration: none;
+    /*  display: inline-block;*/
+    font-size: 2.25rem;
+    margin: 1.2rem 0.2rem ;
+    padding-top: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    border-radius: 50px; 
+    transition-duration: 0.4s;
+    border: 0.2rem solid #f1f1f1;
+    } }
+
+    @media (pointer: coarse) {
+
+      button:hover {
+        color: black;
+        background-color: white;
+      }
+
+      a:hover {
+        color: inherit;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Instead of a Conclusion: Closure</h1>
+    <p>
+      I started this project because this is one of many overlooked events in history. Yugoslavia in 1999 was riddled with detonations, warning sirens, families huddled in basement shelters. NATO announced that it will be bombing the region to fight the oppressive regime of Slobodan Milo&#353evi&#263. Like many US-led military interventions, it was branded as a war that will bring peace and democracy to a region lacking it. Instead, it brought numerous civilian deaths and a legacy of radiation for future generations to make sense of.
+      <br>
+      I was concerned that the ephemeral knowledge of this has to be preserved.
+      <br>
+      "Memory is always transitory, unreliable, and haunted by forgetting, and cannot be stored for eternity no matter how hard we try to secure it with monuments and digital retrieval systems."
+      <br>
+      If you want to see the previous itteration of this project click on <a href="http://senkamilutinovic.com/resounded_ruins.html"> Resounded Ruins.</a>
+      <br>
+      <br>
+    </p>
+  </div>
+
+    <iframe src="zvukovi/radio.mp3" allow="autoplay" id="audio" style="display: none">
+      <audio id="player" autoplay loop>
+        <source src="audio/source.mp3" type="audio/mp3">
+        </audio>
+      </iframe>
+      <div class="container">
+        <div class="buttonz">
+          <a class="button" href='momentary-lapse.html'><button>beginning</button></a>
+        </div>
+      </div>
+      <img src="digital monuments/closure3.png">
+
+      <script type="text/javascript">
+
+        const containerEl = document.querySelector('.container') 
+        const buttonzEl = document.querySelector('.buttonz') 
+
+        console.log(containerEl.scrollWidth);
+
+        function resizeMenu (){
+          console.log(buttonzEl.scrollWidth, window.innerWidth);
+
+          if(buttonzEl.scrollWidth > window.innerWidth){
+           containerEl.classList.add('container-scroll')
+
+         } else {
+          containerEl.classList.remove('container-scroll')
+
+        } }
+
+        resizeMenu()
+
+        window.addEventListener('resize', function(){
+         resizeMenu();
+       } )
+     </script>
+
+
+
+   </body>
+   </html>

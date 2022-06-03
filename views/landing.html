@@ -9,24 +9,69 @@
   <body>
     <div class="landing-content">
       <h1>Momentary Lapse in Memory</h1>
-      <p>Momentary Lapse in Memory is an interactive digital environment concerning the memory landscape of the 1999 NATO bombing of Yugoslavia. It investigates the impact of ephemeral factors on the archival practice. By doing so, it makes space for the unreliable mechanisms of both memory and its transmission, to steer and sway.
+      <p> Momentary Lapse in Memory is an interactive digital environment concerning the memory landscape of the 1999 NATO bombing of Yugoslavia. It investigates the impact of ephemeral factors on the archival practice. By doing so, it makes space for the unreliable mechanisms of both memory and its transmission, to steer and sway.
+        <br>
+        <br>
         <br>
         <br>
         <br>
         <br>
       </p>
+      <h2 id="words"> 
+        About </h2>
+      <p>
+        Here, you will find an archive of recreated spaces of of the NATO bombing of Yugoslavia. All of which have been woven from the experiences of my friends, family and overall kinfolk, whom I interviewed.
+        <br>
+        This is one of many overlooked events in history. Yugoslavia in 1999 was riddled with detonations, warning sirens, families huddled in basement shelters. NATO announced that it will be bombing the region to fight the oppressive regime of Slobodan Milošević. Like many US-led military interventions, it was branded as a war that will bring peace and democracy to a region lacking it. Instead, it brought numerous civilian deaths and a legacy of radiation for future generations to make sense of.
+        <br>
+        I was born a few weeks before the first detonations caused shockwaves half a kilometre areal distance from my home, in the county of Rakovica.
+      </p>
+      <h2> 
+        Thank Yous </h2>
+      <p>
+        This project could not have been realized without the help and guidance of many lovely people, who I would like to thank here:
+        <br>
+        <span>Irena, Maja, Tanja, Uros</span> for sharing with me their memories and allowing me to reconstruct them in this project, as well as for being in constant dialog with me.
+        <br>
+        <span>Marko, Danijela, Hana, Milica, Bisera and Vladimir</span> for helping me understand the memory landscape in a more thorough and nuanced way. 
+        <br> 
+        <span>Arimit Bhattacharya</span> for technical consultation and collaboration, and patience when teaching me the often slippery ropes of programming.
+        <br>
+        <span>Sara Hamadeh, Belle Promchanya</span> and <span>Rick Vermeulen</span> for guidance, teaching, countless conversations and continual support.
+        <br>
+        To my mother, <span>Maja</span>, for her patience, understanding and support.
+        </p>
     </div>
+    <a class="button1" href='#words'><button>&#129123</button></a>
     <div class="landing-container">
       <div class="landing-button-list">
         <a class="landing-button" href='/space?id=maja'><button>enter</button></a>
       </div>
+      <p class="triggerwarning" id="triggerwarning">
+        TRIGGER WARNING <br>
+        Discussions of war and displacement. Soundscapes that vary in intensity and engagement that could be overwhelming.
+      </p> 
     </div>
-    <div class="landing-video-container">
+    <div class="top">
+    </div>
+    <img src="videos/intro12.png">
+    <!-- <div class="landing-video-container">
       <video autoplay muted loop playsinline id="intro_vid">
         <source src="videos/intro_vid.mp4" type="video/mp4">
       </video>
-    </div>
+    </div> -->
     <iframe src="audio/radio.mp3" allow="autoplay" id="audio" style="display: none">
     </iframe>
   </body>
 </html>
+<script type="text/javascript">
+  document.querySelectorAll('a[href^="#words"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+  </script>

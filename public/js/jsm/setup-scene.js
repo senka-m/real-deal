@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from './GLTFLoader.js';
 
+const md = new markdownit();
 let three, space, root, cameraFrameBox, originalMaterial, videoMaterial;
 
 export default function (threeArg, spaceArg) {
@@ -153,7 +154,6 @@ function setupVideoMaterial () {
 }
 
 function setupHoverInteraction () {
-  const md = new markdownit();
   const hoverTextEl = document.querySelector('.hover-text');
   const hoverMaterial = new THREE.MeshBasicMaterial({
     color: 0xFF0000,
@@ -238,50 +238,6 @@ function fuckItUp (root) {
   }
   timeoutHandler();
 }
-
-//Setting up the Pop Up
-// window.onclick = setupPopup;
-// let timesclicked= 0;
-
-// function setupPopup() {
-//   const intro = document.querySelector('intro');
-//   // const introTextEl = space.objects.exit.find(el => el.name == obj.name);
-//   // console.log(introTextEl);
-//   intro.setAttribute("src", `intro: ${space.intro}`);
-//   console.log(intro);
-//   console.log(timesclicked)
-//   if(timesclicked == 0){
-//     console.log(timesclicked);
-//     timesclicked = 1;
-//   } else if(timesclicked == 1){
-//     timesclicked = 2;
-//     console.log(timesclicked);
-//     intro.classList.remove('hide');
-//     // document.getElementById("popUp").style.display = "block";
-//   } else{
-//     timesclicked = 3;
-//     console.log('stop this madness');
-//     // document.getElementById("popUp").style.display = "none";
-//   }
-//   setupPopup();
-// }
-
-// const exitTextEl = document.querySelector('.exit-text');
-//   let exitUrl = '';
-
-//   three.hover.onStart = function (hoverable) {
-//     if (hoverable.linkId) {
-//       exitTextEl.innerHTML = md.render(hoverable.text);
-//       exitTextEl.classList.remove('hide');
-//       exitUrl = `/space?id=${hoverable.linkId}`;
-//       window.addEventListener('click', exitClickHandler);
-//       window.addEventListener('mousemove', exitMouseMoveHandler);
-//     } else {
-//       originalMaterial = hoverable.object.material;
-//       hoverable.object.material = hoverMaterial;
-//       hoverTextEl.innerHTML = md.render(hoverable.text);
-//       hoverTextEl.classList.remove('hide');
-//     }
 
 // Setup Texture
 // function setupTextureMaterial () {

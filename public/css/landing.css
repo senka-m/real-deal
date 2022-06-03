@@ -71,13 +71,32 @@ h1 {
   font-family: AvaraBold;
   font-size: 4.875rem;
 }
+h2{ width: 40vw;
+  font-style: AvaraBold;
+  font-size: 4.875rem;
+  top: 47vw;
+  left: 45vw;
+  color: blue;
+  padding-top: 2vw;
+}
+span{
+  font-style: italic;
+  color: blue;
+  }
 
 p {
-  width: 40vw;
+  width: 45vw;
   font-size: 1.375rem;
   line-height: 1.3;
 }
-
+.top{
+  background: linear-gradient(to right,rgba(1, 1, 1, 0.7), transparent);
+  z-index: -1;
+  width: 100vw;
+  height: 150vw;
+  position: absolute;
+  pointer-events: none;
+}
 .landing-button-list {
   display: flex;
   flex: row nowrap;
@@ -86,13 +105,11 @@ p {
   right: 1rem;
   padding: 0 0.5vw;
 }
-
 button {
   border: none;
   color: black;
   font-family: Avara;
   text-decoration: none;
-  /*  display: inline-block;*/
   font-size: 2.25rem;
   margin: 1.2rem 0.2rem ;
   padding-top: 0.4rem;
@@ -103,13 +120,43 @@ button {
   transition-duration: 0.4s;
   border: 0.2rem solid #f1f1f1;
 }
-
 button:hover {
   background-color: transparent;
   color: blue;
   border: 0.2rem solid blue;
 }
-
+.triggerwarning {
+  font-family: Avara;
+  position: fixed;
+  left: 80vw;
+  top: 30vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  color: white;
+  background: black;
+  width: 16.5vw;
+  line-height: 1.3;
+  font-size: 18px;
+  display: none;
+}
+.landing-button-list:hover + .triggerwarning {
+display: block;
+}
+.button1 {
+border: none;
+color: black;
+font-family: myFirstFont;
+text-decoration: none;
+/*  display: inline-block;*/
+font-size: 2.25rem;
+top: 0vw;
+left: 90vw;
+position: absolute;
+cursor: pointer;
+border-radius: 50px; 
+transition-duration: 0.4s;
+}	
 a {
   text-decoration: none;
   color: black;

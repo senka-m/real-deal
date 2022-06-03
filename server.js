@@ -16,6 +16,10 @@ app.get('/space', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/space.html'));
 });
 
+app.get('/closure', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/closure.html'));
+});
+
 app.get('/api', (req, res) => {
   const space = spaces.find(space => space.id == req.query.id);
 
