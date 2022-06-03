@@ -45,12 +45,15 @@ body{
  div {
    font-family: Avara;
  }
- h1{ width: 60vw;
-    font-family: AvaraBold;
+ h1{ 
+  width: 60vw;
+  font-family: AvaraBold;
   font-size: 4.875rem;
 }
-p {width: 40vw;
+p {
+  width: 40vw;
   font-size: 1.375rem;
+  font-family: Avara;
   line-height: 1.3;
 }
 
